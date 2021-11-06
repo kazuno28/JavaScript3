@@ -1,6 +1,6 @@
 /* <関数とは>
-同じプログラムで何度も記述するのは、効率的ではない
-→　「関数」を使う
+同じプログラムで何度も記述するのは、効率的ではない。
+→　「関数」を使う。
 
 ・「関数」は、繰り返し使われる一連の処理を1つにまとめたもの
 ・関数の形で定義しておき、毎回同じプログラムを書く代わりに、この関数を呼び出すことで処理を実行する。
@@ -31,18 +31,24 @@ function 関数名(引数){
 
 /* <関数の作成>
 function addString(strA){
+  let addStr = "Hello" + strA;
+  return addStr;
+}
+
+・function addString(strA){
   → functionの後に、関数名「addString」を記述し、引数として「strA」を定義している。
 
-  let addStr = "Hello" + strA;
+・let addStr = "Hello" + strA;
   → 変数名「addStr」に、「Hello 」の文字列と、関数の引数「strA」に設定されている文字列を結合。
 
-  return addStr;
+・return addStr;
   → 結合結果の格納された「addStr」を、関数の戻り値としている。
 }
  */
 
 
-/* // メイン部分
+/*
+// メイン部分
 let alertString;
 alertString = addString("WebCamp");
 
